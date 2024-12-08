@@ -9,6 +9,7 @@ import { CommendeModule } from './commende/commende.module';
 import { ProduitModule } from './produit/produit.module';
 import { CommandedetaileModule } from './commandedetaile/commandedetaile.module';
 import { CommpanyModule } from './commpany/commpany.module';
+import { PictureModule } from './picture/picture.module';
 
 @Module({
   imports: [TypeOrmModule.forRootAsync({
@@ -26,7 +27,7 @@ import { CommpanyModule } from './commpany/commpany.module';
         
     }),
   }),
-  ConfigModule.forRoot(), UserModule, ClientModule, CommendeModule, ProduitModule, CommandedetaileModule, CommpanyModule],
+  ConfigModule.forRoot(), UserModule, ClientModule, CommendeModule, ProduitModule, CommandedetaileModule, CommpanyModule, PictureModule],
   controllers: [AppController],
   providers: [AppService],
  
